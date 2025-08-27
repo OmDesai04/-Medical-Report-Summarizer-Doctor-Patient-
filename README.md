@@ -47,3 +47,15 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 streamlit run src/app_streamlit.py
+```
+## 📸 Screenshots
+<img width="1863" height="816" alt="image" src="https://github.com/user-attachments/assets/0ea25d8a-ae7d-4d84-b9c0-7926478ed24b" />
+
+<img width="1653" height="857" alt="image" src="https://github.com/user-attachments/assets/713d8ee1-534b-4a0b-9a9d-e94bde4c6208" />
+
+<img width="1875" height="849" alt="image" src="https://github.com/user-attachments/assets/c1cdb69e-7211-49fb-a493-d33bf1168919" />
+
+<img width="1007" height="854" alt="image" src="https://github.com/user-attachments/assets/be50c07d-1074-44d7-a4d9-5efe6c5e944f" />
+
+
+
