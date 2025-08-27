@@ -1,0 +1,30 @@
+# Training configuration for summarization
+seed: 42
+base_model: "sshleifer/distilbart-cnn-12-6"   # quick demo; swap with pegasus/bart variants
+max_input_length: 512
+max_target_length: 128
+doc_target_max_len: 128
+patient_target_max_len: 110
+
+train:
+  output_dir: "outputs/finetuned"
+  per_device_train_batch_size: 2
+  per_device_eval_batch_size: 2
+  num_train_epochs: 1
+  learning_rate: 5e-5
+  weight_decay: 0.01
+  warmup_ratio: 0.06
+  logging_steps: 20
+  eval_steps: 50
+  save_steps: 200
+  evaluation_strategy: "steps"
+  save_total_limit: 2
+  gradient_accumulation_steps: 2
+  predict_with_generate: true
+  bf16: false
+  fp16: false
+
+paths:
+  train_file: "sample_data/toy_reports_train.jsonl"
+  val_file: "sample_data/toy_reports_val.jsonl"
+  test_file: "sample_data/toy_reports_test.jsonl"
